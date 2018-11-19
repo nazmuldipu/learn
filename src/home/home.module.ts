@@ -5,6 +5,9 @@ import { HomeComponent } from './home.component';
 import { IndexComponent } from './containers/index/index.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { BlogsComponent } from './containers/blogs/blogs.component';
+import { AboutComponent } from './containers/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 export const ROUTES: Routes = [
   {
@@ -14,6 +17,14 @@ export const ROUTES: Routes = [
       {
         path: '',
         component: IndexComponent
+      },
+      {
+        path: 'blogs',
+        component: BlogsComponent
+      },
+      {
+        path: 'about',
+        component: AboutComponent
       }
     ]
   },
@@ -22,6 +33,14 @@ export const ROUTES: Routes = [
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(ROUTES)],
-  declarations: [HomeComponent, IndexComponent, SideNavComponent, NavBarComponent]
+  declarations: [
+    HomeComponent,
+    IndexComponent,
+    SideNavComponent,
+    NavBarComponent,
+    BlogsComponent,
+    AboutComponent,
+    FooterComponent
+  ]
 })
 export class HomeModule {}

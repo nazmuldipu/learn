@@ -1,0 +1,58 @@
+.about {
+  background-color: #f6f9fa;
+  min-height: calc(100vh - 70px);
+  &-contents {
+    margin-top: 100px;
+    font-family: Charter-Roman;
+    font-size: 18px;
+    &-profile {
+      width: 100%;
+    }
+  }
+}
+
+.heading {
+  text-align: center;
+  &-title {
+    font-family: geomanist, -apple-system, BlinkMacSystemFont, segoe ui,
+      Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+      segoe ui symbol;
+    font-weight: 500;
+    font-size: 42px;
+    color: rgba(38, 41, 58, 0.8);
+    letter-spacing: 0.4px;
+    line-height: 52px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  &-text {
+    font-family: calibre, -apple-system, BlinkMacSystemFont, segoe ui, Helvetica,
+      Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    font-size: 16px;
+    color: rgba(38, 41, 58, 0.6);
+    line-height: 18px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

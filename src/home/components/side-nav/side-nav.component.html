@@ -1,6 +1,6 @@
 <div class="side-nav">
   <div class="logo">
-    <a class="logo__tm" href="/">
+    <a class="logo__tm" routerLink="/">
       <img src="/assets/images/nazmul.jpg" alt="Nazmul Alam" />
       <div>
         <h3>Nazmul Alam</h3>
@@ -36,16 +36,35 @@
   </div>
   <nav class="nav" role="navigation">
     <ul class="nav-list">
-      <li class="nav-item"><a class="nav-link" href="/"> Blogs </a></li>
       <li class="nav-item">
-        <a class="nav-link active" href="/about/"> About </a>
+        <a
+          class="nav-link"
+          [ngClass]="{ active: url == '/about' }"
+          routerLink="/about"
+          (click)="select('/about')"
+        >
+          About
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-link" href="/speaking/"> Speaking </a>
+        <a
+          class="nav-link"
+          [ngClass]="{ active: url == '/blogs' }"
+          routerLink="/blogs"
+          (click)="select('/blogs')"
+        >
+          Blogs
+        </a>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link" href="http://ultimateangular.com" target="_blank">
-          Courses
+        <a
+          class="nav-link nav-link"
+          [ngClass]="{ active: url == '/' }"
+          routerLink="/"
+          (click)="select('/')"
+        >
+          Learn
         </a>
       </li>
     </ul>
