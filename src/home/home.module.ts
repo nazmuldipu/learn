@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { IndexComponent } from './containers/index/index.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 export const ROUTES: Routes = [
   {
@@ -21,6 +22,6 @@ export const ROUTES: Routes = [
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(ROUTES)],
-  declarations: [HomeComponent, IndexComponent, SideNavComponent]
+  declarations: [HomeComponent, IndexComponent, SideNavComponent, NavBarComponent]
 })
 export class HomeModule {}
