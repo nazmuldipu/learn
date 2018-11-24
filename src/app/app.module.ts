@@ -7,20 +7,19 @@ import { AppComponent } from './app.component';
 // routes
 export const ROUTES: Routes = [
   {
+    path: 'blogs',
+    loadChildren: '../blogs/blogs.module#BlogsModule'
+  },
+  {
     path: '',
     loadChildren: '../home/home.module#HomeModule'
   },
   { path: '**', redirectTo: '/' }
 ];
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(ROUTES),
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

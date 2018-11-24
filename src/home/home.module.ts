@@ -19,7 +19,7 @@ export const ROUTES: Routes = [
         component: IndexComponent
       },
       {
-        path: 'blogs',
+        path: 'blog',
         component: BlogsComponent
       },
       {

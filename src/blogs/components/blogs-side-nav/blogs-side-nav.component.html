@@ -34,24 +34,14 @@
       </script>
     </div>
   </div>
+  <div class="mod-title">BLOGS</div>
   <nav class="nav" role="navigation">
     <ul class="nav-list">
       <li class="nav-item">
         <a
           class="nav-link"
-          [ngClass]="{ active: url == '/about' }"
-          routerLink="/about"
-          (click)="select('/about')"
-        >
-          About
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          [ngClass]="{ active: url == '/blog' }"
+          [ngClass]="{ active: url == '/blogs' }"
           routerLink="/blog"
-          (click)="select('/blog')"
         >
           Blogs
         </a>
